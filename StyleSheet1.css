@@ -1,0 +1,57 @@
+﻿* {
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #000000;
+    border-radius: 2px;
+    padding: 20px;
+    width: 250px;
+}
+.nav {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/gg.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.toPages {
+    width: 100%;
+margin: auto;
+padding: 20px 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.toPages ul li {
+    list-style:none;
+    display:inline-block;
+    margin:0 20px;
+    position:relative;  
+}
+.toPages ul li a {
+    text-decoration:none;
+    color:black;
+    text-transform:uppercase;
+}
+.toPages li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: lightgreen;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition:0.5s;
+}
+    .toPages li:hover:after {
+        width:100%;
+    }
+
+
